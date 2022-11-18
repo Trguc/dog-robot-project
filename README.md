@@ -1,2 +1,2 @@
 # dog project
-https://novaspotmicro.com/
+Current location of dog project code

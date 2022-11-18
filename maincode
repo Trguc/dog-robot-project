@@ -20,14 +20,13 @@ Servo frANKLE;
 void setup()
 {    
   Serial.begin(9600); // start serial monitor
-TODO: FIX THIS SHit
   blHIP.attach(13);
   brHIP.attach(12);  
   flHIP.attach(11);
   frHIP.attach(10);
   int blhHOME = 80;
-  int brhHOME = 78;
-  int flhHOME = 80;
+  int brhHOME = 80;
+  int flhHOME = 75;
   int frhHOME = 95;
 
   blKNEE.attach(9);
@@ -36,7 +35,7 @@ TODO: FIX THIS SHit
   frKNEE.attach(6);
   int blkHOME = 100;
   int brkHOME = 60;
-  int flkHOME = 95;
+  int flkHOME = 90;
   int frkHOME = 75;
 
 
@@ -45,7 +44,7 @@ TODO: FIX THIS SHit
   flANKLE.attach(3);
   frANKLE.attach(2);
   int blaHOME = 0;
-  int braHOME = 0;
+  int braHOME = 180;
   int flaHOME = 0;
   int fraHOME = 140;
 
@@ -54,21 +53,26 @@ TODO: FIX THIS SHit
   flHIP.write(flhHOME);
   frHIP.write(frhHOME);
 
-  blKNEE.write(blkHOME);
-  brKNEE.write(brkHOME);
-  flKNEE.write(flkHOME);
-  frKNEE.write(frkHOME);
+ // blKNEE.write(blkHOME);
+ // brKNEE.write(brkHOME);
+ // flKNEE.write(flkHOME);
+ // frKNEE.write(frkHOME);
+  // 15 is moderate, 40 too much, 30 for a high stand
+  blKNEE.write(blkHOME-30);
+  brKNEE.write(brkHOME+30);
+  flKNEE.write(flkHOME-30);
+  frKNEE.write(frkHOME+30);
 
 
   //blANKLE.write(blaHOME);
   //brANKLE.write(braHOME);
   //flANKLE.write(flaHOME);
   //frANKLE.write(fraHOME);
-
-  blANKLE.write(40);
-  brANKLE.write(40);
-  flANKLE.write(40);
-  frANKLE.write(100);
+  //50 degrees for high stand 
+  blANKLE.write(blaHOME+50);
+  brANKLE.write(braHOME-50);
+  flANKLE.write(flaHOME+50);
+  frANKLE.write(fraHOME-50);
  
    
 }

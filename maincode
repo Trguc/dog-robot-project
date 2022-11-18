@@ -20,7 +20,7 @@ Servo frANKLE;
 void setup()
 {    
   Serial.begin(9600); // start serial monitor
-
+TODO: FIX THIS SHit
   blHIP.attach(13);
   brHIP.attach(12);  
   flHIP.attach(11);
@@ -60,11 +60,15 @@ void setup()
   frKNEE.write(frkHOME);
 
 
-  blANKLE.write(blaHOME);
-  brANKLE.write(braHOME);
-  flANKLE.write(flaHOME);
-  frANKLE.write(fraHOME);
+  //blANKLE.write(blaHOME);
+  //brANKLE.write(braHOME);
+  //flANKLE.write(flaHOME);
+  //frANKLE.write(fraHOME);
 
+  blANKLE.write(40);
+  brANKLE.write(40);
+  flANKLE.write(40);
+  frANKLE.write(100);
  
    
 }

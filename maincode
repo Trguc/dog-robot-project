@@ -1,0 +1,63 @@
+#include <Servo.h>  
+
+Servo blHIP;  
+Servo brHIP;  
+Servo flHIP; 
+Servo frHIP; 
+
+Servo blKNEE;  
+Servo brKNEE;  
+Servo flKNEE; 
+Servo frKNEE; 
+
+Servo blANKLE;  
+Servo brANKLE;  
+Servo flANKLE; 
+Servo frANKLE; 
+
+void setup()
+{    
+  Serial.begin(9600); // start serial monitor
+
+  //attach servo1 to pin 9 on the Arduino 101
+  blHIP.attach(13);
+  brHIP.attach(12);  
+  flHIP.attach(11);
+  frHIP.attach(10);
+
+  blKNEE.attach(9);
+  brKNEE.attach(8);  
+  flKNEE.attach(7);
+  frKNEE.attach(6);
+  
+  blANKLE.attach(5);
+  brANKLE.attach(4);  
+  flANKLE.attach(3);
+  frANKLE.attach(2);
+  
+  blHIP.write(80);
+  brHIP.write(78);
+  flHIP.write(80);
+  frHIP.write(95);
+
+  blKNEE.write(100);
+  brKNEE.write(60);
+  flKNEE.write(95);
+  frKNEE.write(75);
+
+
+  blANKLE.write(0);
+  brANKLE.write(0);
+  flANKLE.write(0);
+  frANKLE.write(140);
+
+ 
+   
+}
+
+
+void loop()
+{  
+  
+  
+}

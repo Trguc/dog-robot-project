@@ -1,5 +1,7 @@
+
 #include <Servo.h>  
 
+//create a servo object called servo1 
 Servo blHIP;  
 Servo brHIP;  
 Servo flHIP; 
@@ -19,37 +21,49 @@ void setup()
 {    
   Serial.begin(9600); // start serial monitor
 
-  //attach servo1 to pin 9 on the Arduino 101
   blHIP.attach(13);
   brHIP.attach(12);  
   flHIP.attach(11);
   frHIP.attach(10);
+  int blhHOME = 80;
+  int brhHOME = 78;
+  int flhHOME = 80;
+  int frhHOME = 95;
 
   blKNEE.attach(9);
   brKNEE.attach(8);  
   flKNEE.attach(7);
   frKNEE.attach(6);
-  
+  int blkHOME = 100;
+  int brkHOME = 60;
+  int flkHOME = 95;
+  int frkHOME = 75;
+
+
   blANKLE.attach(5);
   brANKLE.attach(4);  
   flANKLE.attach(3);
   frANKLE.attach(2);
-  
-  blHIP.write(80);
-  brHIP.write(78);
-  flHIP.write(80);
-  frHIP.write(95);
+  int blaHOME = 0;
+  int braHOME = 0;
+  int flaHOME = 0;
+  int fraHOME = 140;
 
-  blKNEE.write(100);
-  brKNEE.write(60);
-  flKNEE.write(95);
-  frKNEE.write(75);
+  blHIP.write(blhHOME);
+  brHIP.write(brhHOME);
+  flHIP.write(flhHOME);
+  frHIP.write(frhHOME);
+
+  blKNEE.write(blkHOME);
+  brKNEE.write(brkHOME);
+  flKNEE.write(flkHOME);
+  frKNEE.write(frkHOME);
 
 
-  blANKLE.write(0);
-  brANKLE.write(0);
-  flANKLE.write(0);
-  frANKLE.write(140);
+  blANKLE.write(blaHOME);
+  brANKLE.write(braHOME);
+  flANKLE.write(flaHOME);
+  frANKLE.write(fraHOME);
 
  
    

@@ -53,11 +53,13 @@ void setup()
   flHIP.write(flhHOME);
   frHIP.write(frhHOME);
 
- // blKNEE.write(blkHOME);
- // brKNEE.write(brkHOME);
+  //blKNEE.write(blkHOME);
+  //brKNEE.write(brkHOME);
  // flKNEE.write(flkHOME);
  // frKNEE.write(frkHOME);
   // 15 is moderate, 40 too much, 30 for a high stand
+  
+  //STANDING POSITIONS
   blKNEE.write(blkHOME-30);
   brKNEE.write(brkHOME+30);
   flKNEE.write(flkHOME-30);
@@ -69,6 +71,8 @@ void setup()
   //flANKLE.write(flaHOME);
   //frANKLE.write(fraHOME);
   //50 degrees for high stand 
+  
+   //STANDING POSITIONS
   blANKLE.write(blaHOME+50);
   brANKLE.write(braHOME-50);
   flANKLE.write(flaHOME+50);

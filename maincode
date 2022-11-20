@@ -77,7 +77,28 @@ void setup()
   brANKLE.write(braHOME-50);
   flANKLE.write(flaHOME+50);
   frANKLE.write(fraHOME-50);
- 
+
+  //WALKING V1
+ delay(5000);
+ for (;;) {
+  blANKLE.write(blaHOME+65);
+  brANKLE.write(braHOME-65);
+  flANKLE.write(flaHOME+65);
+  frANKLE.write(fraHOME-65);
+  blKNEE.write(blkHOME-45);
+  brKNEE.write(brkHOME+45);
+  flKNEE.write(flkHOME-45);
+  frKNEE.write(frkHOME+45);
+  delay(500);
+  blANKLE.write(blaHOME+50);
+  brANKLE.write(braHOME-50);
+  flANKLE.write(flaHOME+50);
+  frANKLE.write(fraHOME-50);
+
+  flKNEE.write(flkHOME-30);
+  frKNEE.write(frkHOME+30);
+  delay(500);
+  }
    
 }
 

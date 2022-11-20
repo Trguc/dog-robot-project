@@ -48,10 +48,10 @@ void setup()
   int flaHOME = 0;
   int fraHOME = 140;
 
-  blHIP.write(blhHOME);
-  brHIP.write(brhHOME);
-  flHIP.write(flhHOME);
-  frHIP.write(frhHOME);
+ // blHIP.write(blhHOME);
+//  brHIP.write(brhHOME);
+ // flHIP.write(flhHOME);
+ // frHIP.write(frhHOME);
 
   //blKNEE.write(blkHOME);
   //brKNEE.write(brkHOME);

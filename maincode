@@ -99,6 +99,33 @@ void setup()
   frKNEE.write(frkHOME+30);
   delay(500);
   }
+  //WALKING V2
+     /*
+   delay(5000);
+   
+    for (;;) {
+  blANKLE.write(blaHOME+65);
+  blKNEE.write(blkHOME-45);
+  frANKLE.write(fraHOME-65);
+    frKNEE.write(frkHOME+45);
+     brANKLE.write(braHOME-50);
+      brKNEE.write(brkHOME+30);
+     flANKLE.write(flaHOME+50); 
+     flKNEE.write(flkHOME-30);
+    delay(500);
+  blANKLE.write(blaHOME+50);
+  blKNEE.write(blkHOME-30);
+  frANKLE.write(fraHOME-50);
+    frKNEE.write(frkHOME+30);
+     brANKLE.write(braHOME-65);
+      brKNEE.write(brkHOME+45);
+     flANKLE.write(flaHOME+65); 
+     flKNEE.write(flkHOME-45);
+  delay(500);
+  }
+  */
+   
+   
    
 }
 

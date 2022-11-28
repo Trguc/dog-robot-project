@@ -2,6 +2,8 @@
 #include <Servo.h>
 
 //create a servo object called servo1
+
+//creating servo objects
 Servo blHIP;
 Servo brHIP;
 Servo flHIP;
@@ -19,6 +21,8 @@ Servo frANKLE;
 
 void setup()
 {
+//servo port locations
+
   blHIP.attach(13);
   brHIP.attach(12);
   flHIP.attach(11);

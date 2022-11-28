@@ -1,19 +1,22 @@
 
 #include <Servo.h>
 
-//create a servo object called servo1
+
 
 //creating servo objects
+//Hip is top most servo
 Servo blHIP;
 Servo brHIP;
 Servo flHIP;
 Servo frHIP;
 
+//Knee is mid servo
 Servo blKNEE;
 Servo brKNEE;
 Servo flKNEE;
 Servo frKNEE;
 
+//Ankle is bottom most servo 
 Servo blANKLE;
 Servo brANKLE;
 Servo flANKLE;

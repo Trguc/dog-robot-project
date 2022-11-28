@@ -169,14 +169,19 @@ while(1) {
 
     delay(500);
    
-    flaKNEE.write(flkHOME - 60);
+    flKNEE.write(flkHOME - 40);
 		
     delay(500);    
+    
+    flANKLE.write(brkHOME + 50);
+    
+    delay(500);
+    
+    
+   blANKLE.write(brkHOME + 60);
 
-		flANKLE.write(flaHOME + 50);
-    flaKNEE.write(flkHOME - 30);
 
-		delay(500);
+delay(500);
     }
 */
 

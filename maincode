@@ -25,6 +25,12 @@ Servo frANKLE;
 void setup()
 {
 //servo port locations
+//Home is the down laying postion for the dog
+//Currently all other postions based off home
+//using mathematical functions
+//maybe change in the future to be based 
+//off other known postions or create
+//a variable for each individual postion
 
   blHIP.attach(13);
   brHIP.attach(12);

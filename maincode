@@ -16,7 +16,7 @@ Servo brKNEE;
 Servo flKNEE;
 Servo frKNEE;
 
-//Ankle is bottom most servo 
+//Ankle is bottom most servo
 Servo blANKLE;
 Servo brANKLE;
 Servo flANKLE;
@@ -24,13 +24,13 @@ Servo frANKLE;
 
 void setup()
 {
-//servo port locations
-//Home is the down laying postion for the dog
-//Currently all other postions based off home
-//using mathematical functions
-//maybe change in the future to be based 
-//off other known postions or create
-//a variable for each individual postion
+  //servo port locations
+  //Home is the down laying postion for the dog
+  //Currently all other postions based off home
+  //using mathematical functions
+  //maybe change in the future to be based
+  //off other known postions or create
+  //a variable for each individual postion
 
   blHIP.attach(13);
   brHIP.attach(12);
@@ -113,11 +113,11 @@ void setup()
     }
   */
   /*
-  delay(5000);
-while(1) {
-   blANKLE.write(blaHOME + 50);
+    delay(5000);
+    while(1) {
+    blANKLE.write(blaHOME + 50);
     blKNEE.write(blkHOME - 15);
-   frANKLE.write(fraHOME - 50);
+    frANKLE.write(fraHOME - 50);
     frKNEE.write(frkHOME + 30);
     brANKLE.write(braHOME - 65);
     brKNEE.write(brkHOME + 30);
@@ -127,17 +127,17 @@ while(1) {
     delay(450);
     blANKLE.write(blaHOME + 65);
     blKNEE.write(blkHOME - 30);
-   frANKLE.write(fraHOME - 65);
+    frANKLE.write(fraHOME - 65);
     frKNEE.write(frkHOME + 45);
     brANKLE.write(braHOME - 50);
-    brKNEE.write(brkHOME + 15); 
-   flANKLE.write(flaHOME + 50);
+    brKNEE.write(brkHOME + 15);
+    flANKLE.write(flaHOME + 50);
     flKNEE.write(flkHOME - 30);
     delay(450);
     }
-    */
+  */
   /*
-while(1) {
+    while(1) {
     blANKLE.write(blaHOME + 65);
     blKNEE.write(blkHOME - 30);
     frANKLE.write(fraHOME - 65);
@@ -158,62 +158,62 @@ while(1) {
     delay(500);
     }
   */
-   
 
-//V3 Walking prototype
+
+  //V3 Walking prototype
   delay(5000);
 
- while(1) {
-   
+  while (1) {
+
     flANKLE.write(flaHOME + 35);
     flKNEE.write(flkHOME - 15);
- brANKLE.write(braHOME - 35);
+    brANKLE.write(braHOME - 35);
     brKNEE.write(brkHOME + 0);
 
     delay(500);
-   
-    flKNEE.write(flkHOME - 40);
-        brKNEE.write(brkHOME + 25);
 
-    delay(500);    
-    
-    flANKLE.write(flaHOME + 50);
-        brANKLE.write(braHOME - 50);
+    flKNEE.write(flkHOME - 40);
+    brKNEE.write(brkHOME + 25);
 
     delay(500);
-    
-    
-   blANKLE.write(blaHOME + 60);
-  frANKLE.write(fraHOME - 60);
 
-delay(500);
-  flKNEE.write(flkHOME - 30);
-  brKNEE.write(brkHOME + 15);
-  flANKLE.write(flaHOME + 50);
-  brANKLE.write(braHOME - 50);
-delay(500);
+    flANKLE.write(flaHOME + 50);
+    brANKLE.write(braHOME - 50);
+
+    delay(500);
+
+
+    blANKLE.write(blaHOME + 60);
+    frANKLE.write(fraHOME - 60);
+
+    delay(500);
+    flKNEE.write(flkHOME - 30);
+    brKNEE.write(brkHOME + 15);
+    flANKLE.write(flaHOME + 50);
+    brANKLE.write(braHOME - 50);
+    delay(500);
     blANKLE.write(blaHOME + 35);
     blKNEE.write(blkHOME - 15);
-    
-    frANKLE.write(fraHOME - 35);
-      frKNEE.write(frkHOME + 30);
-      
-delay(500);
-        blKNEE.write(blkHOME - 40);
-         frKNEE.write(frkHOME + 55);
 
- delay(500);    
-    
+    frANKLE.write(fraHOME - 35);
+    frKNEE.write(frkHOME + 30);
+
+    delay(500);
+    blKNEE.write(blkHOME - 40);
+    frKNEE.write(frkHOME + 55);
+
+    delay(500);
+
     blANKLE.write(braHOME + 50);
     frANKLE.write(fraHOME - 50);
 
-      delay(500);
-    
-    
-   flANKLE.write(flaHOME + 60);
-      brANKLE.write(braHOME - 60);
+    delay(500);
 
-    }
+
+    flANKLE.write(flaHOME + 60);
+    brANKLE.write(braHOME - 60);
+
+  }
 
 
 

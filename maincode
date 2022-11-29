@@ -164,6 +164,7 @@ void setup()
 delay(5000);
  
   while (1) {
+    delay(500);
 
     flANKLE.write(flaHOME + 35);
     flKNEE.write(flkHOME - 15);
@@ -210,8 +211,8 @@ delay(5000);
     delay(500);
 
 
-    flANKLE.write(flaHOME + 80);
-    brANKLE.write(braHOME - 80);
+    flANKLE.write(flaHOME + 70);
+    brANKLE.write(braHOME - 70);
 
   }
 

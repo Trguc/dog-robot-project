@@ -168,7 +168,7 @@ void setup()
     flANKLE.write(flaHOME + 35);
     flKNEE.write(flkHOME - 15);
     brANKLE.write(braHOME - 35);
-    brKNEE.write(brkHOME + 0);
+    brKNEE.write(brkHOME + 15);
 
     delay(500);
 

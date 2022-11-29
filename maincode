@@ -72,8 +72,8 @@ void setup()
   // 15 is moderate, 40 too much, 30 for a high stand
 
   //STANDING POSITIONS
-  blKNEE.write(blkHOME - 15);
-  brKNEE.write(brkHOME + 15);
+  blKNEE.write(blkHOME - 30);
+  brKNEE.write(brkHOME + 30);
   flKNEE.write(flkHOME - 30);
   frKNEE.write(frkHOME + 30);
 
@@ -161,8 +161,8 @@ void setup()
 
 
   //V3 Walking prototype
-  delay(5000);
-
+delay(5000);
+ 
   while (1) {
 
     flANKLE.write(flaHOME + 35);
@@ -170,21 +170,21 @@ void setup()
     brANKLE.write(braHOME - 35);
     brKNEE.write(brkHOME + 15);
 
-    delay(500);
+    delay(250);
 
     flKNEE.write(flkHOME - 40);
     brKNEE.write(brkHOME + 40);
 
+    
+
+    flANKLE.write(flaHOME + 70);
+    brANKLE.write(braHOME - 70);
+
     delay(500);
 
-    flANKLE.write(flaHOME + 50);
-    brANKLE.write(braHOME - 50);
 
-    delay(500);
-
-
-    blANKLE.write(blaHOME + 60);
-    frANKLE.write(fraHOME - 60);
+    blANKLE.write(blaHOME + 80);
+    frANKLE.write(fraHOME - 80);
 
     delay(500);
     flKNEE.write(flkHOME - 30);
@@ -198,20 +198,20 @@ void setup()
     frANKLE.write(fraHOME - 35);
     frKNEE.write(frkHOME + 15);
 
-    delay(500);
+    delay(250);
     blKNEE.write(blkHOME - 40);
     frKNEE.write(frkHOME + 40);
 
+   
+
+    blANKLE.write(blaHOME + 70);
+    frANKLE.write(fraHOME - 70);
+
     delay(500);
 
-    blANKLE.write(braHOME + 50);
-    frANKLE.write(fraHOME - 50);
 
-    delay(500);
-
-
-    flANKLE.write(flaHOME + 60);
-    brANKLE.write(braHOME - 60);
+    flANKLE.write(flaHOME + 80);
+    brANKLE.write(braHOME - 80);
 
   }
 

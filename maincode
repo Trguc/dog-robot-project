@@ -167,51 +167,51 @@ while(1) {
    
     flANKLE.write(flaHOME + 35);
     flKNEE.write(flkHOME - 15);
- brANKLE.write(flaHOME - 35);
-    brKNEE.write(flkHOME + 0);
+ brANKLE.write(braHOME - 35);
+    brKNEE.write(brkHOME + 0);
 
     delay(500);
    
     flKNEE.write(flkHOME - 40);
-        brKNEE.write(flkHOME + 25);
+        brKNEE.write(brkHOME + 25);
 
     delay(500);    
     
-    flANKLE.write(brkHOME + 50);
-        brANKLE.write(brkHOME - 50);
+    flANKLE.write(flaHOME + 50);
+        brANKLE.write(braHOME - 50);
 
     delay(500);
     
     
-   blANKLE.write(brkHOME + 60);
-  frANKLE.write(brkHOME - 60);
+   blANKLE.write(blaHOME + 60);
+  frANKLE.write(fraHOME - 60);
 
 delay(500);
   flKNEE.write(flkHOME - 30);
-  brKNEE.write(flkHOME + 15);
+  brKNEE.write(brkHOME + 15);
   flANKLE.write(flaHOME + 50);
-  brANKLE.write(flaHOME - 50);
+  brANKLE.write(braHOME - 50);
 delay(500);
-    blANKLE.write(flaHOME + 35);
-    blKNEE.write(flkHOME - 15);
+    blANKLE.write(blaHOME + 35);
+    blKNEE.write(blkHOME - 15);
     
-    frANKLE.write(flaHOME - 35);
+    frANKLE.write(fraHOME - 35);
       frKNEE.write(frkHOME + 30);
       
 delay(500);
-        blKNEE.write(flkHOME - 40);
+        blKNEE.write(blkHOME - 40);
          frKNEE.write(frkHOME + 55);
 
  delay(500);    
     
-    blANKLE.write(brkHOME + 50);
-    frANKLE.write(flaHOME - 50);
+    blANKLE.write(braHOME + 50);
+    frANKLE.write(fraHOME - 50);
 
       delay(500);
     
     
-   flANKLE.write(brkHOME + 60);
-      brANKLE.write(brkHOME - 60);
+   flANKLE.write(flaHOME + 60);
+      brANKLE.write(braHOME - 60);
 
     }
 

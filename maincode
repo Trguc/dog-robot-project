@@ -92,10 +92,14 @@ void setup()
   //50 degrees for high stand
 
   //STANDING POSITIONS
-  blANKLE.write(50);
+  blANKLE.write(40);
   brANKLE.write(130);
-  flANKLE.write(50);
+  flANKLE.write(40);
   frANKLE.write(90);
+  //blANKLE.write(50);
+ // brANKLE.write(130);
+ // flANKLE.write(50);
+ // frANKLE.write(90);
 
   //WALKING V1
   /*delay(5000);

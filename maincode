@@ -63,7 +63,10 @@ void setup()
   int braHOME = 180;
   int flaHOME = 0;
   int fraHOME = 140;
-
+  //int blaHOME = 0;
+ // int braHOME = 180;
+//  int flaHOME = 0;
+ // int fraHOME = 140;
   blHIP.write(blhHOME);
   brHIP.write(brhHOME);
   flHIP.write(flhHOME);
@@ -89,10 +92,10 @@ void setup()
   //50 degrees for high stand
 
   //STANDING POSITIONS
-  blANKLE.write(blaHOME + 50);
-  brANKLE.write(braHOME - 50);
-  flANKLE.write(flaHOME + 50);
-  frANKLE.write(fraHOME - 50);
+  blANKLE.write(50);
+  brANKLE.write(130);
+  flANKLE.write(50);
+  frANKLE.write(90);
 
   //WALKING V1
   /*delay(5000);
@@ -165,14 +168,14 @@ void setup()
 
 
   //V3 Walking prototype
-delay(5000);
+/*delay(5000);
  
   while (1) {
     delay(250);
 
-    flANKLE.write(flaHOME + 35);
+    flANKLE.write(flaHOME + 10);
     flKNEE.write(flkHOME - 15);
-    brANKLE.write(braHOME - 35);
+    brANKLE.write(braHOME - 10);
     brKNEE.write(brkHOME + 15);
 
     delay(250);
@@ -182,25 +185,25 @@ delay(5000);
 
     
 
-    flANKLE.write(flaHOME + 70);
-    brANKLE.write(braHOME - 70);
+    flANKLE.write(flaHOME + 45);
+    brANKLE.write(braHOME - 45);
 
     delay(250);
 
 
-    blANKLE.write(blaHOME + 80);
-    frANKLE.write(fraHOME - 80);
+    blANKLE.write(blaHOME + 55);
+    frANKLE.write(fraHOME - 55);
 
     delay(250);
     flKNEE.write(flkHOME - 30);
     brKNEE.write(brkHOME + 30);
-    flANKLE.write(flaHOME + 50);
-    brANKLE.write(braHOME - 50);
+    flANKLE.write(flaHOME + 25);
+    brANKLE.write(braHOME - 25);
     delay(250);
-    blANKLE.write(blaHOME + 35);
+    blANKLE.write(blaHOME + 10);
     blKNEE.write(blkHOME - 15);
 
-    frANKLE.write(fraHOME - 35);
+    frANKLE.write(fraHOME - 10);
     frKNEE.write(frkHOME + 15);
 
     delay(250);
@@ -209,17 +212,17 @@ delay(5000);
 
    
 
-    blANKLE.write(blaHOME + 70);
-    frANKLE.write(fraHOME - 70);
+    blANKLE.write(blaHOME + 45);
+    frANKLE.write(fraHOME - 45);
 
     delay(250);
 
 
-    flANKLE.write(flaHOME + 70);
-    brANKLE.write(braHOME - 70);
+    flANKLE.write(flaHOME + 45);
+    brANKLE.write(braHOME - 45);
 
   }
-
+*/
 
 
 

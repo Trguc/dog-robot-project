@@ -199,18 +199,21 @@ void setup()
     frANKLE.write(fraHOME - 55);
 
     delay(250);
+    
     flKNEE.write(flkHOME - 30);
     brKNEE.write(brkHOME + 30);
     flANKLE.write(flaHOME + 25);
     brANKLE.write(braHOME - 25);
+    
     delay(250);
+    
     blANKLE.write(blaHOME + 10);
     blKNEE.write(blkHOME - 15);
-
     frANKLE.write(fraHOME - 10);
     frKNEE.write(frkHOME + 15);
 
     delay(250);
+    
     blKNEE.write(blkHOME - 40);
     frKNEE.write(frkHOME + 40);
 
@@ -222,9 +225,17 @@ void setup()
     delay(250);
 
 
-    flANKLE.write(flaHOME + 45);
-    brANKLE.write(braHOME - 45);
-
+    flANKLE.write(flaHOME + 55);
+    brANKLE.write(braHOME - 55);
+//was 45 before but wanted to see if puting it equal with the code for the otherside would work
+//now that the legs are more equal to each other.
+delay (250);
+   flKNEE.write(flkHOME - 30);
+    brKNEE.write(brkHOME + 30);
+    flANKLE.write(flaHOME + 25);
+    brANKLE.write(braHOME - 25);
+    
+    
   }
 */
 

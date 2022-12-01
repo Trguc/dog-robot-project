@@ -230,10 +230,10 @@ void setup()
 //was 45 before but wanted to see if puting it equal with the code for the otherside would work
 //now that the legs are more equal to each other.
 delay (250);
-   flKNEE.write(flkHOME - 30);
-    brKNEE.write(brkHOME + 30);
-    flANKLE.write(flaHOME + 25);
-    brANKLE.write(braHOME - 25);
+   frKNEE.write(frkHOME - 30);
+    blKNEE.write(blkHOME + 30);
+    frANKLE.write(fraHOME + 25);
+    blANKLE.write(blaHOME - 25);
     
     
   }

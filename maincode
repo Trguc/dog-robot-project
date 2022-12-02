@@ -237,6 +237,47 @@ delay (250);
     
     
   }
+  //V3.5 maybe
+  while (1) {
+    delay(250);
+
+   flANKLE.write(25);
+    brANKLE.write(145);
+    delay(250);
+    flKNEE.write(75);  
+    brKNEE.write(90); 
+    
+ 
+    delay(250);
+
+    flKNEE.write(60);
+    brKNEE.write(105);
+
+delay(250);
+    flANKLE.write(40);
+    brANKLE.write(130);
+    
+    
+    delay(250);
+    blANKLE.write(25);
+    frANKLE.write(105);
+    
+    delay(250);
+    blKNEE.write(85);
+    frKNEE.write(90);
+   
+
+    delay(250);
+    
+    blKNEE.write(40);
+    frKNEE.write(105);
+
+   delay(250);
+
+    blANKLE.write(40);
+    frANKLE.write(90);
+
+  }
 
 
 

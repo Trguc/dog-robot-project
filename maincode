@@ -243,12 +243,15 @@ delay (250);
    
   delay(5000);
   while (1) {
+
+
     delay(150);
 
    flANKLE.write(40);
     brANKLE.write(140);
 
     delay(10);
+
     flKNEE.write(55);  
     brKNEE.write(95); 
     
@@ -259,6 +262,7 @@ delay (250);
     brKNEE.write(90);
 
 delay(150);
+
     flANKLE.write(50);
     brANKLE.write(140);
     //was 45 and 135
@@ -272,10 +276,12 @@ delay(150);
 
 
     delay(150);
+
     blANKLE.write(40);
     frANKLE.write(95);
     
     delay(10);
+
     blKNEE.write(65);
     frKNEE.write(110);
    

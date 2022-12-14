@@ -32,6 +32,7 @@ void setup()
   //off other known postions or create
   //a variable for each individual postion
 
+//FIX HIP POSITIONS
   blHIP.attach(13);
   brHIP.attach(12);
   flHIP.attach(11);
@@ -248,7 +249,7 @@ delay (250);
     delay(150);
 
    flANKLE.write(40);
-    brANKLE.write(115);
+    brANKLE.write(125);
 
     delay(10);
 
@@ -264,7 +265,7 @@ delay (250);
 delay(150);
 
     flANKLE.write(60);
-    brANKLE.write(125);
+    brANKLE.write(115);
     //was 45 and 135
     
 

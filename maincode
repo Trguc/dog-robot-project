@@ -37,10 +37,10 @@ void setup()
   brHIP.attach(12);
   flHIP.attach(11);
   frHIP.attach(10);
-  int blhHOME = 80;
-  int brhHOME = 80;
-  int flhHOME = 75;
-  int frhHOME = 95;
+  int blhHOME = 88;//80
+  int brhHOME = 76;//80
+  int flhHOME = 70;//75
+  int frhHOME = 100;//95
 
   blKNEE.attach(9);
   brKNEE.attach(8);
@@ -249,23 +249,23 @@ delay (250);
     delay(150);
 
    flANKLE.write(40);
-    brANKLE.write(125);
+    brANKLE.write(115);
 
     delay(10);
 
     flKNEE.write(55);  
-    brKNEE.write(95); 
+    brKNEE.write(82); //95
     
  
     delay(150);
 
     flKNEE.write(60);
-    brKNEE.write(90);
+    brKNEE.write(77);//90
 
 delay(150);
 
     flANKLE.write(60);
-    brANKLE.write(115);
+    brANKLE.write(130);
     //was 45 and 135
     
 

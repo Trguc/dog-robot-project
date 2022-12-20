@@ -81,7 +81,7 @@ void setup()
 
   //STANDING POSITIONS
   blKNEE.write(70);
-  brKNEE.write(90);
+  brKNEE.write(77);
   flKNEE.write(60);
   frKNEE.write(105);
 
@@ -249,7 +249,7 @@ delay (250);
     delay(150);
 
    flANKLE.write(40);
-    brANKLE.write(115);
+    brANKLE.write(130);
 
     delay(10);
 
@@ -265,7 +265,7 @@ delay (250);
 delay(150);
 
     flANKLE.write(60);
-    brANKLE.write(130);
+    brANKLE.write(120);
     //was 45 and 135
     
 
@@ -279,23 +279,23 @@ delay(150);
     delay(150);
 
     blANKLE.write(50);
-    frANKLE.write(95);
+    frANKLE.write(100);
     
     delay(10);
 
     blKNEE.write(65);
-    frKNEE.write(110);
+    frKNEE.write(105);
    
 
     delay(150);
     
     blKNEE.write(70);
-    frKNEE.write(105);
+    frKNEE.write(100);
 
    delay(150);
 
-    blANKLE.write(60);
-    frANKLE.write(75);
+    blANKLE.write(70);
+    frANKLE.write(85);
 //was 45 and 90
   }
  

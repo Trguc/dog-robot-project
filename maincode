@@ -265,7 +265,7 @@ delay (250);
 delay(150);
 
     flANKLE.write(60);
-    brANKLE.write(120);
+    brANKLE.write(115);
     //was 45 and 135
     
 
@@ -289,7 +289,7 @@ delay(150);
 
     delay(150);
     
-    blKNEE.write(70);
+    blKNEE.write(65);
     frKNEE.write(100);
 
    delay(150);

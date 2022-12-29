@@ -289,13 +289,13 @@ delay(150);
 
     delay(150);
     
-    blKNEE.write(65);
+    blKNEE.write(70);
     frKNEE.write(100);
 
    delay(150);
 
     blANKLE.write(70);
-    frANKLE.write(85);
+    frANKLE.write(82);
 //was 45 and 90
   }
  

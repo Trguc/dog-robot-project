@@ -241,7 +241,7 @@ delay (250);
   }
   */
   //V3.5 maybe
-   
+   /*
   delay(5000);
   while (1) {
 
@@ -298,8 +298,64 @@ delay(150);
     frANKLE.write(82);
 //was 45 and 90
   }
- 
+ */
+// V6.32
+  delay(5000);
+  while (1) {
 
+
+    delay(150);
+
+   flANKLE.write(40);
+    brANKLE.write(130);
+
+    delay(10);
+
+    flKNEE.write(60);  
+    brKNEE.write(77); //95
+    
+ 
+    delay(150);
+
+    flKNEE.write(55);
+    brKNEE.write(82);//90
+
+delay(150);
+
+    flANKLE.write(60);
+    brANKLE.write(115);
+    //was 45 and 135
+    
+
+
+
+
+
+
+
+
+    delay(150);
+
+    blANKLE.write(50);
+    frANKLE.write(100);
+    
+    delay(10);
+
+    blKNEE.write(70);
+    frKNEE.write(100);
+   
+
+    delay(150);
+    
+    blKNEE.write(65);
+    frKNEE.write(105);
+
+   delay(150);
+
+    blANKLE.write(70);
+    frANKLE.write(82);
+//was 45 and 90
+  }
 
 
 }

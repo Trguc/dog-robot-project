@@ -21,9 +21,23 @@ Servo blANKLE;
 Servo brANKLE;
 Servo flANKLE;
 Servo frANKLE;
+int val;
 
+int blhHOME = 88;//80
+  int brhHOME = 76;//80
+  int flhHOME = 70;//75
+  int frhHOME = 100;//95
+   int blkHOME = 115;
+  int brkHOME = 45;
+  int flkHOME = 105;
+  int frkHOME = 60;
+   int blaHOME = 0;
+  int braHOME = 180;
+  int flaHOME = 0;
+  int fraHOME = 140;
 void setup()
 {
+    Serial.begin(9600);
   //servo port locations
   //Home is the down laying postion for the dog
   //Currently all other postions based off home
@@ -59,7 +73,7 @@ void setup()
   blANKLE.attach(5);
   brANKLE.attach(4);
   flANKLE.attach(3);
-  frANKLE.attach(1);
+  frANKLE.attach(2);
   int blaHOME = 0;
   int braHOME = 180;
   int flaHOME = 0;
@@ -299,7 +313,9 @@ delay(150);
 //was 45 and 90
   }
  */
+   
 // V6.32
+/*
   delay(5000);
   while (1) {
 
@@ -356,13 +372,119 @@ delay(150);
     frANKLE.write(82);
 //was 45 and 90
   }
-
+ */
 
 }
 
 
 void loop()
 {
+if (Serial.available()) // if serial value is available
+
+{
+
+val = Serial.read();// then read the serial value
+
+if (val == 'w') //if value input is equals to d
+
+{
+for (int i=0; i<10; i++){
+
+  delay(150);
+
+   flANKLE.write(40);
+    brANKLE.write(130);
+
+    delay(10);
+
+    flKNEE.write(55);  
+    brKNEE.write(82); //95
+    
+ 
+    delay(150);
+
+    flKNEE.write(60);
+    brKNEE.write(77);//90
+
+delay(150);
+
+    flANKLE.write(60);
+    brANKLE.write(115);
+    //was 45 and 135
+    
+
+
+
+
+
+
+
+
+    delay(150);
+
+    blANKLE.write(50);
+    frANKLE.write(100);
+    
+    delay(10);
+
+    blKNEE.write(65);
+    frKNEE.write(105);
+   
+
+    delay(150);
+    
+    blKNEE.write(70);
+    frKNEE.write(100);
+
+   delay(150);
+
+    blANKLE.write(70);
+    frANKLE.write(82);
+//was 45 and 90
+}
+}
+
+if (val == 'f'){
+   blHIP.write(88);
+  brHIP.write(76);
+  blANKLE.write(0);
+  brANKLE.write(180);
+  flKNEE.write(60);
+  frKNEE.write(105);
+   flANKLE.write(40);
+  frANKLE.write(90);
+  }
+if (val == 'g'){
+  blHIP.write(blhHOME);
+  brHIP.write(brhHOME);
+  flHIP.write(flhHOME);
+  frHIP.write(frhHOME);
+  blKNEE.write(blkHOME);
+  brKNEE.write(brkHOME);
+  flKNEE.write(flkHOME);
+  frKNEE.write(frkHOME);
+  blANKLE.write(blaHOME);
+  brANKLE.write(braHOME);
+  flANKLE.write(flaHOME);
+  frANKLE.write(fraHOME);
+  }
+if (val == 't'){
+  blKNEE.write(70);
+  brKNEE.write(77);
+  flKNEE.write(60);
+  frKNEE.write(105);
+    blANKLE.write(40);
+  brANKLE.write(130);
+  flANKLE.write(40);
+  frANKLE.write(90);
+    blHIP.write(blhHOME);
+  brHIP.write(brhHOME);
+  flHIP.write(flhHOME);
+  frHIP.write(frhHOME);
+  }
 
 
 }
+
+}
+

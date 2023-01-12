@@ -495,13 +495,113 @@ if (val == 'h'){ //shake while standing
   
   }
 if (val == 'a'){ //turn left
+for (int i=0; i<10; i++){
 
+  delay(150);
+
+   
+    brANKLE.write(130);
+
+    delay(10);
+
+    
+    brKNEE.write(82); //95
+    
+ 
+    delay(150);
+
+    
+    brKNEE.write(77);//90
+
+delay(150);
+
+   
+    brANKLE.write(115);
+    //was 45 and 135
+    
+
+
+    delay(150);
+
+    
+    frANKLE.write(100);
+    
+    delay(10);
+
+   
+    frKNEE.write(105);
+   
+
+    delay(150);
+    
+    
+    frKNEE.write(100);
+
+   delay(150);
+
+   
+    frANKLE.write(82);
+//was 45 and 90
+}
   
   }
 
 if (val == 'd'){ //turn right
 
-  
+  for (int i=0; i<10; i++){
+
+  delay(150);
+
+   flANKLE.write(40);
+    
+
+    delay(10);
+
+    flKNEE.write(55);  
+    
+    
+ 
+    delay(150);
+
+    flKNEE.write(60);
+    
+
+delay(150);
+
+    flANKLE.write(60);
+    
+    //was 45 and 135
+    
+
+
+
+
+
+
+
+
+    delay(150);
+
+    blANKLE.write(50);
+    
+    
+    delay(10);
+
+    blKNEE.write(65);
+    
+   
+
+    delay(150);
+    
+    blKNEE.write(70);
+    
+
+   delay(150);
+
+    blANKLE.write(70);
+    
+//was 45 and 90
+}
   }
 
 }

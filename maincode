@@ -494,6 +494,15 @@ if (val == 'h'){ //shake while standing
   frKNEE.write(160);
   
   }
+if (val == 'a'){ //turn left
+
+  
+  }
+
+if (val == 'd'){ //turn right
+
+  
+  }
 
 }
 

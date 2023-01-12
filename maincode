@@ -444,7 +444,7 @@ delay(150);
 }
 }
 
-if (val == 'f'){
+if (val == 'f'){ //sit
    blHIP.write(88);
   brHIP.write(76);
   blANKLE.write(0);
@@ -454,7 +454,7 @@ if (val == 'f'){
    flANKLE.write(40);
   frANKLE.write(90);
   }
-if (val == 'g'){
+if (val == 'g'){ //lay
   blHIP.write(blhHOME);
   brHIP.write(brhHOME);
   flHIP.write(flhHOME);
@@ -468,7 +468,7 @@ if (val == 'g'){
   flANKLE.write(flaHOME);
   frANKLE.write(fraHOME);
   }
-if (val == 't'){
+if (val == 't'){ //stand
   blKNEE.write(70);
   brKNEE.write(77);
   flKNEE.write(60);
@@ -482,9 +482,19 @@ if (val == 't'){
   flHIP.write(flhHOME);
   frHIP.write(frhHOME);
   }
-
+if (val == 'h'){ //shake while standing 
+   blKNEE.write(70);
+  brKNEE.write(87);
+  blANKLE.write(40);
+  brANKLE.write(125);
+  flKNEE.write(40);
+  
+   flANKLE.write(80);
+  frANKLE.write(100);
+  frKNEE.write(160);
+  
+  }
 
 }
 
 }
-

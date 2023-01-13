@@ -496,7 +496,8 @@ if (val == 'h'){ //shake while standing
   }
 if (val == 'a'){ //turn left
 for (int i=0; i<10; i++){
-
+flANKLE.write(30);
+blANKLE.write(40);
   delay(150);
 
    
@@ -516,7 +517,7 @@ for (int i=0; i<10; i++){
 delay(150);
 
    
-    brANKLE.write(115);
+    brANKLE.write(100);
     //was 45 and 135
     
 
@@ -540,70 +541,79 @@ delay(150);
    delay(150);
 
    
-    frANKLE.write(82);
+    frANKLE.write(70);
 //was 45 and 90
 }
+      brANKLE.write(130);
+         brKNEE.write(82); //95
+    frANKLE.write(100);
+    frKNEE.write(100);
+ flANKLE.write(40);
+    blANKLE.write(50);
+
   
   }
 
 if (val == 'd'){ //turn right
 
-  for (int i=0; i<10; i++){
-
+for (int i=0; i<10; i++){
+frANKLE.write(115);
+brANKLE.write(145);
   delay(150);
 
-   flANKLE.write(40);
-    
+   
+    blANKLE.write(50);
 
     delay(10);
 
-    flKNEE.write(55);  
     
+    blKNEE.write(65); //95
     
  
     delay(150);
 
-    flKNEE.write(60);
     
+    blKNEE.write(70);//90
 
 delay(150);
 
-    flANKLE.write(60);
-    
+   
+    blANKLE.write(80);
     //was 45 and 135
     
 
 
-
-
-
-
-
-
     delay(150);
 
-    blANKLE.write(50);
     
+    flANKLE.write(40);
     
     delay(10);
 
-    blKNEE.write(65);
-    
+   
+    flKNEE.write(55);
    
 
     delay(150);
     
-    blKNEE.write(70);
     
+    flKNEE.write(60);
 
    delay(150);
 
-    blANKLE.write(70);
-    
+   
+    flANKLE.write(70);
 //was 45 and 90
 }
+     blANKLE.write(50);
+    blKNEE.write(65); //95
+    flANKLE.write(40);
+    flKNEE.write(55);
+    frANKLE.write(100);
+ brANKLE.write(130);
+  }
+
   }
 
 }
 
-}

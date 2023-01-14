@@ -63,8 +63,8 @@ void setup()
 
   blKNEE.attach(27);
   brKNEE.attach(14);
-  flKNEE.attach(12);
-  frKNEE.attach(19);
+  flKNEE.attach(19);
+  frKNEE.attach(18);
   int blkHOME = 115;
   int brkHOME = 45;
   int flkHOME = 105;
@@ -75,10 +75,10 @@ void setup()
 //  int frkHOME = 75;
 
 
-  blANKLE.attach(18);
-  brANKLE.attach(5);
-  flANKLE.attach(17);
-  frANKLE.attach(16);
+  blANKLE.attach(5);
+  brANKLE.attach(17);
+  flANKLE.attach(16);
+  frANKLE.attach(4);
   int blaHOME = 0;
   int braHOME = 180;
   int flaHOME = 0;

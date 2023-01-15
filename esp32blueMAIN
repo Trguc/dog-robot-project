@@ -24,7 +24,8 @@ Servo_ESP32 brANKLE;
 Servo_ESP32 flANKLE;
 Servo_ESP32 frANKLE;
 int val;
-
+char incomingChar;
+String message = "";
 int blhHOME = 88;//80
 int brhHOME = 76;//80
 int flhHOME = 70;//75
@@ -383,22 +384,18 @@ void setup()
 
 void loop()
 {
- if (Serial.available())
-  {
-    SerialBT.write(Serial.read());
+ if (SerialBT.available()){
+    char incomingChar = SerialBT.read();
+    if (incomingChar != '\n'){
+      message += String(incomingChar);
+    }
+    else{
+      message = "";
+    }
+    Serial.write(incomingChar);  
   }
-  if (SerialBT.available())
-  {
-    Serial.write(SerialBT.read());
-  }
-  delay(20);
-  if (Serial.available()) // if serial value is available
-
-  {
-
-    val = Serial.read();// then read the serial value
-
-    if (val == 'w') //if value input is equals to d
+  // Check received message and control output accordingly
+ if (message == "w") //if value input is equals to w
 
     {
       for (int i = 0; i < 10; i++) {
@@ -466,7 +463,7 @@ void loop()
         frKNEE.write(105);
     }
 
-    if (val == 'f') { //sit
+    if (message == "f") { //sit
       blHIP.write(88);
       brHIP.write(76);
       blANKLE.write(0);
@@ -476,7 +473,7 @@ void loop()
       flANKLE.write(40);
       frANKLE.write(90);
     }
-    if (val == 'g') { //lay
+    if (message == "g") { //lay
       blHIP.write(blhHOME);
       brHIP.write(brhHOME);
       flHIP.write(flhHOME);
@@ -490,7 +487,7 @@ void loop()
       flANKLE.write(flaHOME);
       frANKLE.write(fraHOME);
     }
-    if (val == 't') { //stand
+    if (message == "t") { //stand
       blKNEE.write(70);
       brKNEE.write(77);
       flKNEE.write(60);
@@ -504,7 +501,7 @@ void loop()
       flHIP.write(flhHOME);
       frHIP.write(frhHOME);
     }
-    if (val == 'h') { //shake while standing
+    if (message == "h") { //shake while standing
       blKNEE.write(70);
       brKNEE.write(87);
       blANKLE.write(40);
@@ -516,7 +513,7 @@ void loop()
       frKNEE.write(160);
 
     }
-    if (val == 'a') { //turn left
+    if (message == "a") { //turn left
       for (int i = 0; i < 10; i++) {
         flANKLE.write(30);
         blANKLE.write(40);
@@ -576,7 +573,7 @@ void loop()
 
     }
 
-    if (val == 'd') { //turn right
+    if (message == "d") { //turn right
 
       for (int i = 0; i < 10; i++) {
         frANKLE.write(115);
@@ -634,7 +631,7 @@ void loop()
       frANKLE.write(100);
       brANKLE.write(130);
     }
-
-  }
-
+ 
+  delay(20);
+  
 }

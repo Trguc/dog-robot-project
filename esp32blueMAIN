@@ -631,7 +631,28 @@ void loop()
       frANKLE.write(100);
       brANKLE.write(130);
     }
- 
+  if (message == "y") { //lean down
+      blKNEE.write(70);
+      brKNEE.write(77);
+      flKNEE.write(flkHOME);
+      frKNEE.write(frkHOME);
+      blANKLE.write(40);
+      brANKLE.write(130);
+      flANKLE.write(flaHOME);
+      frANKLE.write(fraHOME);
+      blHIP.write(blhHOME);
+      brHIP.write(brhHOME);
+      flHIP.write(flhHOME);
+      frHIP.write(frhHOME);
+    }
+     if (message == "z") { //tilt left
+         flANKLE.write(30);
+        blANKLE.write(40);
+    }
+     if (message == "x") { //tilt right
+              frANKLE.write(115);
+        brANKLE.write(145);
+    }
   delay(20);
   
 }

@@ -19,7 +19,7 @@ Y: Lean Down (used to help get up from lay)
 Z: Tilt Left
 X: Tilt Right
 
-Credits/Authors
+Credits/Authors:
 
 Trguc, 
 gustavfrinaldi

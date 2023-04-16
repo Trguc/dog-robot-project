@@ -18,3 +18,8 @@ H: Shake (only use when standing)
 Y: Lean Down (used to help get up from lay)
 Z: Tilt Left
 X: Tilt Right
+
+Credits/Authors
+
+Trguc 
+gustavfrinaldi

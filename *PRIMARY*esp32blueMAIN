@@ -470,8 +470,11 @@ void loop()
       brANKLE.write(180);
       flKNEE.write(60);
       frKNEE.write(105);
-      flANKLE.write(40);
-      frANKLE.write(90);
+      
+      //flANKLE.write(40);
+      flANKLE.write(70);
+      //frANKLE.write(90);
+      frANKLE.write(60);
     }
     if (message == "g") { //lay
       blHIP.write(blhHOME);

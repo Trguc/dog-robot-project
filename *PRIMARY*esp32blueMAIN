@@ -648,6 +648,20 @@ void loop()
       flHIP.write(flhHOME);
       frHIP.write(frhHOME);
     }
+     if (message == "p") { //test hips
+     
+      blHIP.write(58);
+      brHIP.write(106);
+      flHIP.write(40);
+      frHIP.write(130);
+    }
+     if (message == "l") { //test hips
+     
+      blHIP.write(73);
+      brHIP.write(91);
+      flHIP.write(55);
+      frHIP.write(115);
+    }
      if (message == "z") { //tilt left
          flANKLE.write(30);
         blANKLE.write(40);

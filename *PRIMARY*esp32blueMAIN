@@ -1,4 +1,4 @@
-
+*Credit to authors in Github readme*
 #include <Servo_ESP32.h>
 #include "BluetoothSerial.h"
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
@@ -7,6 +7,9 @@
 BluetoothSerial SerialBT;
 //creating servo objects
 //Hip is top most servo
+Servo_ESP32 camera;
+
+
 Servo_ESP32 blHIP;
 Servo_ESP32 brHIP;
 Servo_ESP32 flHIP;
@@ -51,7 +54,12 @@ void setup()
   //off other known postions or create
   //a variable for each individual postion
 
+//camera servo
+   camera.attach(12);
+
+
   //FIX HIP POSITIONS
+
   blHIP.attach(32);
   brHIP.attach(33);
   flHIP.attach(25);
@@ -120,6 +128,8 @@ void setup()
   // brANKLE.write(130);
   // flANKLE.write(50);
   // frANKLE.write(90);
+
+camera.write(140);
 
   //WALKING V1
   /*delay(5000);
@@ -661,6 +671,21 @@ void loop()
       brHIP.write(91);
       flHIP.write(55);
       frHIP.write(115);
+    }
+      if (message == "i") { //test hips
+          camera.write(270);
+
+      
+    }
+          if (message == "k") { //test hips 
+     camera.write(140);
+
+    
+    }
+          if (message == "m") { //test hips
+               camera.write(100);
+
+    
     }
      if (message == "z") { //tilt left
          flANKLE.write(30);

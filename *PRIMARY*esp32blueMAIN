@@ -1,4 +1,4 @@
-*Credit to authors in Github readme*
+//*Credit to authors in Github readme*
 #include <Servo_ESP32.h>
 #include "BluetoothSerial.h"
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)

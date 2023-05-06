@@ -120,8 +120,9 @@ void setup()
   //50 degrees for high stand
 
   //STANDING POSITIONS
-  blANKLE.write(40);
-  brANKLE.write(130);
+  blANKLE.write(45);
+ // brANKLE.write(130);
+ brANKLE.write(135);
   flANKLE.write(40);
   frANKLE.write(90);
   //blANKLE.write(50);
@@ -701,41 +702,83 @@ void loop()
       for (int i = 0; i < 10; i++) {
 //new
         frANKLE.write(90);
-      blANKLE.write(40);
+      blANKLE.write(45);
 
    
-        delay(600);
+        delay(400);
 
     //    blANKLE.write(50);
            // frANKLE.write(105);
 
         frANKLE.write(105);
-      blANKLE.write(25);
+      blANKLE.write(30);
 
-        delay(600);
+        delay(400);
 
      //   blKNEE.write(65);
      //        frKNEE.write(105);
-      blKNEE.write(75);
+      blKNEE.write(65);
 
         frKNEE.write(115);
 
 
-        delay(600);
+        delay(400);
 
    //     blKNEE.write(70);
      //   frKNEE.write(100);
         frANKLE.write(82);
-      blANKLE.write(50);
+      blANKLE.write(70);
 
-        delay(600);
+        delay(400);
 
   //      blANKLE.write(70);
-  //new
+  //new    
+  blANKLE.write(45);
+frANKLE.write(90);
+          delay(100);
           frKNEE.write(100);
-        frANKLE.write(90);
-      blANKLE.write(40);
-      blKNEE.write(75);
+       blKNEE.write(75);
+  
+delay(400);
+//OTHER SIDE
+ brANKLE.write(130);
+      flANKLE.write(40);
+
+   
+        delay(400);
+
+    //    blANKLE.write(50);
+           // frANKLE.write(105);
+
+        brANKLE.write(145);
+      flANKLE.write(25);
+
+        delay(400);
+
+     //   blKNEE.write(75);
+     //        frKNEE.write(115);
+      flKNEE.write(45);
+
+        brKNEE.write(80);
+
+
+        delay(400);
+
+   //     blKNEE.write(70);
+     //   frKNEE.write(100);
+        brANKLE.write(105);
+      flANKLE.write(48);
+
+        delay(400);
+
+  //      blANKLE.write(70);
+  //new    
+  flANKLE.write(40); 
+brANKLE.write(130);
+          delay(100);
+          brKNEE.write(70);
+       flKNEE.write(60);
+  
 
         //was 45 and 90
       }
@@ -743,7 +786,7 @@ void loop()
       brKNEE.write(77);
       flKNEE.write(60);
       frKNEE.write(105);
-      blANKLE.write(40);
+      blANKLE.write(45);
       brANKLE.write(130);
       flANKLE.write(40);
       frANKLE.write(90);

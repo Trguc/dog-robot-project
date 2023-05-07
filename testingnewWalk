@@ -702,50 +702,51 @@ void loop()
       for (int i = 0; i < 10; i++) {
 //new
         frANKLE.write(90);
-      blANKLE.write(45);
+      blANKLE.write(50);
 
    
-        delay(400);
+        delay(300);
 
     //    blANKLE.write(50);
            // frANKLE.write(105);
 
         frANKLE.write(105);
-      blANKLE.write(30);
+      blANKLE.write(35);
 
-        delay(400);
+        delay(300);
 
      //   blKNEE.write(65);
      //        frKNEE.write(105);
       blKNEE.write(65);
+      //  frKNEE.write(105);
 
-        frKNEE.write(115);
+        frKNEE.write(105);
 
 
-        delay(400);
+        delay(300);
 
    //     blKNEE.write(70);
      //   frKNEE.write(100);
         frANKLE.write(82);
-      blANKLE.write(70);
+      blANKLE.write(75);
 
-        delay(400);
+        delay(300);
 
   //      blANKLE.write(70);
   //new    
-  blANKLE.write(45);
+  blANKLE.write(50);
 frANKLE.write(90);
           delay(100);
           frKNEE.write(100);
        blKNEE.write(75);
   
-delay(400);
+          delay(300);
 //OTHER SIDE
  brANKLE.write(130);
       flANKLE.write(40);
 
    
-        delay(400);
+        delay(300);
 
     //    blANKLE.write(50);
            // frANKLE.write(105);
@@ -753,23 +754,24 @@ delay(400);
         brANKLE.write(145);
       flANKLE.write(25);
 
-        delay(400);
+        delay(300);
 
      //   blKNEE.write(75);
      //        frKNEE.write(115);
-      flKNEE.write(45);
+      flKNEE.write(55);
+    //  flKNEE.write(45);
 
         brKNEE.write(80);
 
 
-        delay(400);
+        delay(300);
 
    //     blKNEE.write(70);
      //   frKNEE.write(100);
         brANKLE.write(105);
       flANKLE.write(48);
 
-        delay(400);
+        delay(300);
 
   //      blANKLE.write(70);
   //new    
@@ -786,7 +788,7 @@ brANKLE.write(130);
       brKNEE.write(77);
       flKNEE.write(60);
       frKNEE.write(105);
-      blANKLE.write(45);
+      blANKLE.write(50);//+5
       brANKLE.write(130);
       flANKLE.write(40);
       frANKLE.write(90);

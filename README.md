@@ -1,5 +1,5 @@
 # dog project
-Current location of dog project code
+Current location of dog project code.
 This project is based on the Nova Spot micro by Chris Locke. 
 The goal of this project is to create a cost-effective and simplistic way to implement this project into reality. 
 Our design allows anyone to pair the CAD files from the Nova SM3 project with a simple Arduino and servos to create a fully functional walking dog robot. 

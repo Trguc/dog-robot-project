@@ -1,4 +1,4 @@
-# dog project
+# Robot Dog Project
 Current location of dog project code.
 This project is based on the Nova Spot micro by Chris Locke. 
 The goal of this project is to create a cost-effective and simplistic way to implement this project into reality. 

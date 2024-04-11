@@ -658,6 +658,33 @@ void loop()
       flHIP.write(flhHOME);
       frHIP.write(frhHOME);
     }
+if (message == "e") { //lean down and stand
+      blKNEE.write(70);
+      brKNEE.write(77);
+      flKNEE.write(flkHOME);
+      frKNEE.write(frkHOME);
+      blANKLE.write(40);
+      brANKLE.write(130);
+      flANKLE.write(flaHOME);
+      frANKLE.write(fraHOME);
+      blHIP.write(blhHOME);
+      brHIP.write(brhHOME);
+      flHIP.write(flhHOME);
+      frHIP.write(frhHOME);
+
+ blKNEE.write(70);
+      brKNEE.write(77);
+      flKNEE.write(60);
+      frKNEE.write(105);
+      blANKLE.write(40);
+      brANKLE.write(130);
+      flANKLE.write(40);
+      frANKLE.write(90);
+      blHIP.write(blhHOME);
+      brHIP.write(brhHOME);
+      flHIP.write(flhHOME);
+      frHIP.write(frhHOME);
+    }
      if (message == "p") { //test hips
      
       blHIP.write(58);

@@ -671,6 +671,7 @@ if (message == "e") { //lean down and stand
       brHIP.write(brhHOME);
       flHIP.write(flhHOME);
       frHIP.write(frhHOME);
+  delay(400);
 
  blKNEE.write(70);
       brKNEE.write(77);

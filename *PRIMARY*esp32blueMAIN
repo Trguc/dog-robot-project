@@ -486,6 +486,19 @@ void loop()
       //frANKLE.write(90);
       frANKLE.write(60);
     }
+     if (message == "n") { //standing on back legs trick *not working yet*
+      blHIP.write(88);
+      brHIP.write(76);
+      blANKLE.write(25);
+      brANKLE.write(155);   
+      flKNEE.write(60);
+      frKNEE.write(105);
+                                                  
+      //flANKLE.write(40);
+      flANKLE.write(75);
+      //frANKLE.write(90);
+      frANKLE.write(55);
+    }
     if (message == "g") { //lay
       blHIP.write(blhHOME);
       brHIP.write(brhHOME);
